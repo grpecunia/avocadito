@@ -62,9 +62,9 @@ function App() {
           className="featurette-divider"
           style={{ paddingTop: "40px", paddingBottom: "40px" }}
         />
-
-        <img className='featurette-image img-fluid mx-auto' src='./images/screen_shot_2020-03-06_at_3.34.21_pm.png' alt=''/>
-
+        <div className="container">
+        <img src='./images/screen_shot_2020-03-06_at_3.34.21_pm.png' alt=''/>
+        </div>
         <div className="row props" style={{ paddingBottom: "60px" }}>
           <div
             className="col-lg-3"
