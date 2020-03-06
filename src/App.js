@@ -317,9 +317,7 @@ function App() {
               <h5>About the Avocadito Project</h5>
               <p>
                 Avocadito is a hackathon project from Ironhack. It is also
-                intended as a tool for data analysts and/or novel curious
-                thinkers that want to dive into analysis of stock market
-                information. <br />
+                intended as a tool for people that live for them avocados. <br />
                 <br />
               </p>
             </div>
