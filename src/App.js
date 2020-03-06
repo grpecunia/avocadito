@@ -2,11 +2,13 @@ import React from "react";
 import "./App.css";
 import { Navbar, Nav, Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import picOne from '../src/px1.jpeg'
+import picTwo from "../src/px2.jpeg";
 
 function App() {
   return (
     <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg" style={{ backgroundColor: "#D6FCD7" }}>
         <Navbar.Brand href="#home">Avocadito.com</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -24,8 +26,10 @@ function App() {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>Avocaditos</h3>
-            <p>We don't play with avocados, we eat them</p>
+            <h3 >Avocaditos</h3>
+            <p >
+              We don't play with avocados, we eat them
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -36,8 +40,8 @@ function App() {
           />
 
           <Carousel.Caption>
-            <h3>Avocadito</h3>
-            <p>And they are delicious</p>
+            <h3 >Avocadito</h3>
+            <p > And they are delicious</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -48,8 +52,8 @@ function App() {
           />
 
           <Carousel.Caption>
-            <h3>Aguacate</h3>
-            <p>That's now a spanish avocado :)</p>
+            <h3 >Aguacate</h3>
+            <p >That's now a spanish avocado :)</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -98,7 +102,7 @@ function App() {
           style={{ paddingTop: "40px", paddingBottom: "40px" }}
         />
         <div className="container">
-        <img src='./images/screen_shot_2020-03-06_at_3.34.21_pm.png' alt=''/>
+          <img src="./images/screen_shot_2020-03-06_at_3.34.21_pm.png" alt="" />
         </div>
         <div className="row props" style={{ paddingBottom: "60px" }}>
           <div
@@ -182,45 +186,26 @@ function App() {
 
         <Carousel>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://source.unsplash.com/random/800x400?avocado"
-              alt="First slide"
-            />
+            <img className="d-block w-100" src={picOne} alt="First slide" />
             <Carousel.Caption>
-              <h3>Avocaditos</h3>
-              <p>We don't play with avocados, we eat them</p>
+              <h3 style={{ color: "black" }}>Avocaditos</h3>
+              <p style={{ color: "black" }}>
+                We don't play with avocados, we eat them
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://source.unsplash.com/random/800x401?avocado"
-              alt="Third slide"
-            />
+            <img className="d-block w-100" src={picTwo} alt="Third slide" />
 
             <Carousel.Caption>
-              <h3>Avocadito</h3>
-              <p>And they are delicious</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://source.unsplash.com/random/801x400?avocado"
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Aguacate</h3>
-              <p>That's now a spanish avocado :)</p>
+              <h3 style={{ color: "black" }}>Avocadito</h3>
+              <p style={{ color: "black" }}>
+                One avocado a day, keeps the doctor away!
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <hr
-          className="featurette-divider"
-          style={{paddingBottom: "40px" }}
-        />
+        <hr className="featurette-divider" style={{ paddingBottom: "40px" }} />
 
         <div className="row props" style={{ paddingBottom: "60px" }}>
           <div
@@ -301,7 +286,7 @@ function App() {
       <footer
         className="page-footer font-small blue pt-4"
         style={{
-          backgroundColor: "green",
+          backgroundColor: 'darkgreen',
           paddingTop: "40px",
           paddingBottom: "40px",
           color: "white",
@@ -317,7 +302,8 @@ function App() {
               <h5>About the Avocadito Project</h5>
               <p>
                 Avocadito is a hackathon project from Ironhack. It is also
-                intended as a tool for people that live for them avocados. <br />
+                intended as a tool for people that live for them avocados.{" "}
+                <br />
                 <br />
               </p>
             </div>
