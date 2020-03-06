@@ -98,7 +98,7 @@ function App() {
           style={{ paddingTop: "40px", paddingBottom: "40px" }}
         />
         <div className="container">
-        <img src='./images/screen_shot_2020-03-06_at_3.34.21_pm.png' alt=''/>
+        <img src='./screen_shot_2020-03-06_at_3.34.21_pm.png' alt=''/>
         </div>
         <div className="row props" style={{ paddingBottom: "60px" }}>
           <div
