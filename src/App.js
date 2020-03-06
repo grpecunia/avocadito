@@ -17,7 +17,8 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#home">Recipes</Nav.Link>
+            <Nav.Link href="#home">Stories</Nav.Link>
             <Nav.Link href="#ben">Benefits</Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -30,10 +31,8 @@ function App() {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3 >Avocaditos</h3>
-            <p >
-              We don't play with avocados, we eat them
-            </p>
+            <h3>Avocaditos</h3>
+            <p>We don't play with avocados, we eat them</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -44,8 +43,8 @@ function App() {
           />
 
           <Carousel.Caption>
-            <h3 >Avocadito</h3>
-            <p > And they are delicious</p>
+            <h3>Avocadito</h3>
+            <p> And they are delicious</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -56,8 +55,8 @@ function App() {
           />
 
           <Carousel.Caption>
-            <h3 >Aguacate</h3>
-            <p >That's now a spanish avocado :)</p>
+            <h3>Aguacate</h3>
+            <p>That's now a spanish avocado :)</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -106,12 +105,14 @@ function App() {
           style={{ paddingTop: "40px", paddingBottom: "40px" }}
         />
         <div className="container">
-        <img className="featurette-image img-fluid mx-auto" src={screenshot} alt=''/>
+          <img
+            className="featurette-image img-fluid mx-auto"
+            src={screenshot}
+            alt=""
+          />
         </div>
-        <br >
-        </br>
-        <br >
-        </br>
+        <br></br>
+        <br></br>
         <hr
           className="featurette-divider"
           style={{ paddingTop: "40px", paddingBottom: "40px" }}
@@ -215,13 +216,11 @@ function App() {
           </Carousel.Item>
         </Carousel>
         <hr className="featurette-divider" style={{ paddingBottom: "40px" }} />
-
-       
       </div>
       <footer
         className="page-footer font-small blue pt-4"
         style={{
-          backgroundColor: 'darkgreen',
+          backgroundColor: "darkgreen",
           paddingTop: "40px",
           paddingBottom: "40px",
           color: "white",
