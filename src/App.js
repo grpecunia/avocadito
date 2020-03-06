@@ -2,6 +2,10 @@ import React from "react";
 import "./App.css";
 import { Navbar, Nav, Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import screenshot from './images/screen_shot_2020-03-06_at_3.34.21_pm.png';
+import sc1 from './images/pexels-photo-1143754.jpeg';
+import sc2 from './images/pexels-photo-1484522.jpeg';
+import sc3 from './images/pexels-photo-566566.jpeg';
 
 function App() {
   return (
@@ -98,8 +102,16 @@ function App() {
           style={{ paddingTop: "40px", paddingBottom: "40px" }}
         />
         <div className="container">
-        <img src='./screen_shot_2020-03-06_at_3.34.21_pm.png' alt=''/>
+        <img className="featurette-image img-fluid mx-auto" src={screenshot} alt=''/>
         </div>
+        <br >
+        </br>
+        <br >
+        </br>
+        <hr
+          className="featurette-divider"
+          style={{ paddingTop: "40px", paddingBottom: "40px" }}
+        />
         <div className="row props" style={{ paddingBottom: "60px" }}>
           <div
             className="col-lg-3"
@@ -113,16 +125,15 @@ function App() {
           >
             <img
               className="rounded-circle"
-              src="https://images.unsplash.com/photo-1573566291259-fd494a326b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80"
+              src={sc1}
               alt=""
               width="140"
               height="140"
             />
             <br />
             <br />
-            <h2>Avocado Data</h2>
+            <h2>Avo toast</h2>
             <br />
-            <p>Lorem ipsum - we need text</p>
           </div>
           <br />
           <br />
@@ -138,16 +149,15 @@ function App() {
           >
             <img
               className="rounded-circle"
-              src="https://images.unsplash.com/photo-1573566291259-fd494a326b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80"
+              src={sc2}
               alt=""
               width="140"
               height="140"
             />
             <br />
             <br />
-            <h2>Avocado Data</h2>
+            <h2>Avo bowl</h2>
             <br />
-            <p>Lorem ipsum - we need text</p>
           </div>
           <br />
           <br />
@@ -163,16 +173,15 @@ function App() {
           >
             <img
               className="rounded-circle"
-              src="https://images.unsplash.com/photo-1573566291259-fd494a326b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80"
+              src={sc3}
               alt=""
               width="140"
               height="140"
             />
             <br />
             <br />
-            <h2>Avocado Data</h2>
+            <h2>Avo taco</h2>
             <br />
-            <p>Lorem ipsum - we need text</p>
           </div>
         </div>
         <hr
