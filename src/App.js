@@ -1,22 +1,58 @@
 import React from "react";
 import "./App.css";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
     <div>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Avocado</Navbar.Brand>
+        <Navbar.Brand href="#home">Avocadito.com</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Benefits</Nav.Link>
-            <Nav.Link href="#link">Stories</Nav.Link>
-            <Nav.Link href="#link">Recipes</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#ben">Benefits</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://source.unsplash.com/random/800x400?avocado"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>Avocaditos</h3>
+            <p>We don't play with avocados, we eat them</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://source.unsplash.com/random/800x401?avocado"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Avocadito</h3>
+            <p>And they are delicious</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://source.unsplash.com/random/801x400?avocado"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Aguacate</h3>
+            <p>That's now a spanish avocado :)</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
       <div className="container">
         <hr
           className="featurette-divider"
@@ -57,7 +93,6 @@ function App() {
             />
           </div>
         </div>
-
         <hr
           className="featurette-divider"
           style={{ paddingTop: "40px", paddingBottom: "40px" }}
@@ -71,7 +106,9 @@ function App() {
             style={{
               paddingBottom: "40px",
               paddingTop: "40px",
-              backgroundColor: "#e9ecef"
+              backgroundColor: "#e9ecef",
+              textAlign: "center",
+              alignItems: "center"
             }}
           >
             <img
@@ -83,13 +120,9 @@ function App() {
             />
             <br />
             <br />
-            <h2>Market Data</h2>
+            <h2>Avocado Data</h2>
             <br />
-            <p>
-              The application is backed by powerful API's with stock market data
-              and commodity trading from across the world. View company/ticker
-              information with access to download ready data.
-            </p>
+            <p>Lorem ipsum - we need text</p>
           </div>
           <br />
           <br />
@@ -98,31 +131,120 @@ function App() {
             style={{
               paddingBottom: "40px",
               paddingTop: "40px",
-              backgroundColor: "#e9ecef"
+              backgroundColor: "#e9ecef",
+              textAlign: "center",
+              alignItems: "center"
             }}
           >
             <img
               className="rounded-circle"
               src="https://images.unsplash.com/photo-1573566291259-fd494a326b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80"
-              alt="Commodities"
+              alt=""
               width="140"
               height="140"
             />
             <br />
             <br />
-            <h2>Compare</h2>
+            <h2>Avocado Data</h2>
             <br />
+            <p>Lorem ipsum - we need text</p>
+          </div>
+          <br />
+          <br />
+          <div
+            className="col-lg-3 offset-1"
+            style={{
+              paddingBottom: "40px",
+              paddingTop: "40px",
+              backgroundColor: "#e9ecef",
+              textAlign: "center",
+              alignItems: "center"
+            }}
+          >
             <img
+              className="rounded-circle"
               src="https://images.unsplash.com/photo-1573566291259-fd494a326b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80"
-              alt="gold"
-              width="50px"
-              height="50px"
+              alt=""
+              width="140"
+              height="140"
+            />
+            <br />
+            <br />
+            <h2>Avocado Data</h2>
+            <br />
+            <p>Lorem ipsum - we need text</p>
+          </div>
+        </div>
+        <hr
+          className="featurette-divider"
+          style={{ paddingTop: "40px", paddingBottom: "40px" }}
+        />
+
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://source.unsplash.com/random/800x400?avocado"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>Avocaditos</h3>
+              <p>We don't play with avocados, we eat them</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://source.unsplash.com/random/800x401?avocado"
+              alt="Third slide"
             />
 
-            <p>
-              <br />
-              Compare over 13,000+ ticker symbols with different commodities!
-            </p>
+            <Carousel.Caption>
+              <h3>Avocadito</h3>
+              <p>And they are delicious</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://source.unsplash.com/random/801x400?avocado"
+              alt="Third slide"
+            />
+
+            <Carousel.Caption>
+              <h3>Aguacate</h3>
+              <p>That's now a spanish avocado :)</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+        <hr
+          className="featurette-divider"
+          style={{paddingBottom: "40px" }}
+        />
+
+        <div className="row props" style={{ paddingBottom: "60px" }}>
+          <div
+            className="col-lg-3"
+            style={{
+              paddingBottom: "40px",
+              paddingTop: "40px",
+              backgroundColor: "#e9ecef",
+              textAlign: "center",
+              alignItems: "center"
+            }}
+          >
+            <img
+              className="rounded-circle"
+              src="https://images.unsplash.com/photo-1573566291259-fd494a326b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80"
+              alt=""
+              width="140"
+              height="140"
+            />
+            <br />
+            <br />
+            <h2>Avocado Data</h2>
+            <br />
+            <p>Lorem ipsum - we need text</p>
           </div>
           <br />
           <br />
@@ -131,25 +253,48 @@ function App() {
             style={{
               paddingBottom: "40px",
               paddingTop: "40px",
-              backgroundColor: "#e9ecef"
+              backgroundColor: "#e9ecef",
+              textAlign: "center",
+              alignItems: "center"
             }}
           >
             <img
               className="rounded-circle"
               src="https://images.unsplash.com/photo-1573566291259-fd494a326b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80"
-              alt="Analysis"
+              alt=""
               width="140"
               height="140"
             />
             <br />
             <br />
-            <h2>Analyze</h2>
+            <h2>Avocado Data</h2>
             <br />
-            <p>
-              Generate a correlation/regression analysis for a range of time
-              between your selected ticker symbol and commodity returning you
-              with a Pearson's Correlation and R² values for your analysis.
-            </p>
+            <p>Lorem ipsum - we need text</p>
+          </div>
+          <br />
+          <br />
+          <div
+            className="col-lg-3 offset-1"
+            style={{
+              paddingBottom: "40px",
+              paddingTop: "40px",
+              backgroundColor: "#e9ecef",
+              textAlign: "center",
+              alignItems: "center"
+            }}
+          >
+            <img
+              className="rounded-circle"
+              src="https://images.unsplash.com/photo-1573566291259-fd494a326b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80"
+              alt=""
+              width="140"
+              height="140"
+            />
+            <br />
+            <br />
+            <h2>Avocado Data</h2>
+            <br />
+            <p>Lorem ipsum - we need text</p>
           </div>
         </div>
       </div>
